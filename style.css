@@ -1,0 +1,72 @@
+body {
+  max-width: 1000px;
+  background-color: #000; /* simplified hex code for black */
+  font-family: monospace; /* moved font family to body to apply to all elements */
+  color: #fff; /* default text color to white */
+  margin: 0; /* added to remove default margin */
+  padding: 0; /* added to remove default padding */
+  margin-left: 300px;
+}
+
+main {
+  margin: 40px auto; /* added to center content horizontally */
+  padding: 20px; /* added to add some padding around content */
+  background-color: #1b1b1b; /* dark gray background */
+  border-radius: 20px; /* added to match previous div styles */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* added to add some depth */
+}
+
+h2 {
+  text-align: center; /* centered heading */
+  font-size: 30px; /* increased font size for better readability */
+  margin-bottom: 20px; /* added to add some space between heading and paragraph */
+}
+
+.para {
+  text-align: left; /* left-aligned paragraph text */
+  font-size: 20px; /* kept font size the same */
+  margin-bottom: 20px; /* added to add some space between paragraphs */
+}
+
+.list {
+  list-style: none; /* removed default list styling */
+  padding: 0; /* removed default list padding */
+  margin: 0; /* removed default list margin */
+  margin-top: 30px;
+}
+
+.list li {
+  font-size: 20px; /* kept font size the same */
+  margin-bottom: 10px; /* added to add some space between list items */
+}
+
+.button {
+  background-image: url('button.jpg'); /* kept background image the same */
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.button button {
+  font-family: monospace;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 20px; /* reduced margin top to 20px */
+}
+
+img {
+  height: 400px;
+  width: 270px;
+  float: right;
+  margin-top: -380px; /* reduced margin top to -200px */
+  margin-right: -20px;
+  border-radius: 20px;
+}

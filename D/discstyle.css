@@ -1,0 +1,89 @@
+body {
+    max-width: 1000px;
+    background-color: #000;
+    font-family: monospace;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-left: 300px;
+    box-sizing: border-box; /* added to include padding and border in width calculation */
+  }
+  
+  main {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* added to limit width and improve responsiveness */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px; /* added to add space between heading and paragraph */
+  }
+  
+  p {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px; /* added to add space between paragraphs */
+  }
+  
+  .home {
+    background-image: url('button.jpg');
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 40px; /* added to add space between main content and button section */
+  }
+
+  .home button {
+    font-family: monospace;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: background-color 0.2s ease; /* added to create a hover effect */
+  }
+
+  .hover {
+    transform: scale(1.1); /* increase size on hover */
+    transition: transform 0.3s ease-in-out; /* add transition effect */
+  }
+  
+  .contact-button {
+    position: fixed;
+    bottom: 10vh; /* use viewport height for dynamic positioning */
+    left: 10vw; /* use viewport width for dynamic positioning */
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid grey;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s ease-in-out; /* add transition effect */
+    display: flex; /* add display flex to center icon */
+    justify-content: center; /* center icon horizontally */
+    align-items: center; /* center icon vertically */
+  }
+  
+  .contact-button:hover {
+    background: grey;
+    transform: scale(1.1); /* add scale effect on hover */
+    width: 45px; /* increase width on hover */
+    height: 45px; /* increase height on hover */
+  }
+  
+  .contact-button:hover .fas {
+    color: white;
+  }
