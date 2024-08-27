@@ -1,72 +1,245 @@
 body {
-  max-width: 1000px;
-  background-color: #000; /* simplified hex code for black */
-  font-family: monospace; /* moved font family to body to apply to all elements */
-  color: #fff; /* default text color to white */
-  margin: 0; /* added to remove default margin */
-  padding: 0; /* added to remove default padding */
-  margin-left: 300px;
-}
-
-main {
-  margin: 40px auto; /* added to center content horizontally */
-  padding: 20px; /* added to add some padding around content */
-  background-color: #1b1b1b; /* dark gray background */
-  border-radius: 20px; /* added to match previous div styles */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* added to add some depth */
-}
-
-h2 {
-  text-align: center; /* centered heading */
-  font-size: 30px; /* increased font size for better readability */
-  margin-bottom: 20px; /* added to add some space between heading and paragraph */
-}
-
-.para {
-  text-align: left; /* left-aligned paragraph text */
-  font-size: 20px; /* kept font size the same */
-  margin-bottom: 20px; /* added to add some space between paragraphs */
-}
-
-.list {
-  list-style: none; /* removed default list styling */
-  padding: 0; /* removed default list padding */
-  margin: 0; /* removed default list margin */
-  margin-top: 30px;
-}
-
-.list li {
-  font-size: 20px; /* kept font size the same */
-  margin-bottom: 10px; /* added to add some space between list items */
-}
-
-.button {
-  background-image: url('button.jpg'); /* kept background image the same */
-  background-size: cover;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-}
-
-.button button {
   font-family: monospace;
+  background-color: #000;
+  color: #fff;
+  margin: 0; /* added */
+  padding: 0; /* added */
+}
+
+.side {
+  position: absolute;
+  top:  0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 250px;
+  height: 620px; /* increased height to accommodate the form */
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 5px;
+  border-radius: 30px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 370px;
+}
+
+.side img {
+  width: 90px;
+  height: 130px;
+  border-radius: 50px;
+  margin: 20px auto;
+  display: block;
+  margin-top: -10px;
+}
+
+.side h2, .portfolio h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.side h2 {
+  font-size: 30px;
+}
+
+.side p {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+ol li {
+  padding: 10px;
+}
+
+ol li i {
+  margin-right: 10px;
+}
+
+.portfolio {
+  position: absolute;
+  top: 263%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 5px;
+  border-radius: 20px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ffffff;
+  margin: 20px 0;
+}
+
+.portfolio {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  width: 70%;
+  height: 190%;
+  margin-left: 290px;
+  margin-top: -1110px;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.portfolio h2 {
+  margin-right: 20px;
+  text-align: left;
+}
+
+html, body {
+  margin: 0;
+  height: 100%; /* added */
+}
+
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(10, 10, 50) 0%,rgb(60, 10, 60) 100%);
+  z-index: -1;
+}
+
+.form {
+  margin-top: 20px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 5px;
+  border-radius: 20px;
+}
+
+.form input, .form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 5px;
+  color: #000000;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
   background-color: #333;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 15px;
   cursor: pointer;
-  border-radius: 20px;
-  margin-top: 20px; /* reduced margin top to 20px */
 }
 
-img {
-  height: 400px;
-  width: 270px;
-  float: right;
-  margin-top: -380px; /* reduced margin top to -200px */
-  margin-right: -20px;
-  border-radius: 20px;
+/* added media queries for mobile devices */
+@media only screen and (max-width: 768px) {
+  .side {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .side img {
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+  }
+  .portfolio {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  ol {
+    font-size: 16px;
+  }
+  
+  hr {
+    margin: 10px 0;
+  }
 }
+
+@media only screen and (max-width: 480px) {
+  .side {
+    padding: 10px;
+  }
+  
+  .side img {
+    width: 30%;
+    height: auto;
+    margin: 5px auto;
+  }
+  
+  .portfolio {
+    padding: 10px;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  ol {
+    font-size: 14  }
+  
+    hr {
+      margin: 5px 0;
+    }
+  }
+  
+  .form {
+    margin-top: 120px;
+    margin-left: -20px;
+    width: 250px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px;
+    border-radius: 20px;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form input, .form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px;
+    color: #000000;
+  }
+  
+  .form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }

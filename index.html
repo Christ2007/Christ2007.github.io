@@ -1,39 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Curriculum</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
 </head>
-
 <body>
-    <main>
-        <section>
-            <h2>A little introduction</h2>
-            <p class="para">
-                My name is Christian Luongo, I am passionate about electronics and computers, I became passionate about programming when I was 13 years old and since then I have always wanted to learn and for this reason I started a learning path that would help me learn all this, I have this site created with the intention of demonstrating a little bit of my programming skills and maybe finding a job doing what I love, below will be listed most of the skills I have.
-            </p>
-
-            <ol class="list">
-                <li>Good knowledge of English</li>
-                <li>Basic knowledge in cybersecurity</li>
-                <li>Deep knowledge of html, css, javascript and PHP</li>
-                <li>Great passion for this topic and ready to learn everything</li>
-                <li>Good teamwork skills</li>
-                <li>Flexible hour</li>
-                <li>Good expertise in trasforming ideas into reality</li>
+  <canvas id="particle-canvas"></canvas>
+  <div class="side">
+    <img src="Chris.png" alt="Christian Luongo">
+    <h2>Christian Luongo</h2>
+    <p>Junior Web Developer</p>
+    <hr>
+    <p id="prog">Known Programming Languages</p>
+    <ol>
+      <li><i class="fab fa-html5"></i> HTML</li>
+      <li><i class="fab fa-css3"></i> CSS</li>
+      <li><i class="fab fa-js"></i> JavaScript</li>
+      <li><i class="fab fa-python"></i> Python</li>
+    </ol>
+    <div class="form">
+      <h3>Contact Me</h3>
+      <form action="https://formspree.io/f/xyzgowld" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="subject">Oggetto:</label>
+        <input type="text" id="subject" name="subject" required>
+    
+        <label for="message">Messaggio:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    
+        <button type="submit">Invia</button>
+      </form>
+    </div>
+  </div>
+  <div class="portfolio">
+      <section>
+        <h2>Portfolio</h2>
+        <h3>introduction:</h3>
+        <p>Hi, my name is Christian Luongo i'm a 18 years old web developer,i code from when i was 13 and in this time span i learned all the programming languages that i listed on the left some more than others. although i am still young i alredy done jobs for some people and all remained really enthusiast. i will do anything i can to make the website of your dreams how you want it and i wont stop until you are happy. </p>
+      </section>  
+      <section>
+        <h3>Some of my skills:</h3>
+          <section>
+            <ol>
+             <li>1) Good programming skills</li>
+             <li>2) deep knowledge of computers and networks</li>
+             <li>3) optimal knowledge of english</li>
             </ol>
+          </section>
+      </section>
 
-            <section class="button">
-                <button id="disc">More About Me</button>
-            </section>
+      <section>
+        <h3>Previus Experience</h3>
+        <p> During my early years in the web development field, I had the opportunity to work on a variety of projects that allowed me to develop practical and technical skills. I started by creating small websites for friends and acquaintances, using HTML, CSS, and JavaScript to build user-friendly and responsive interfaces. This helped me understand the basics of web design and front-end development. Additionally, I collaborated with a small team to develop a website for a local startup, where I was responsible for integrating features such as contact forms, photo galleries, and login systems. Through these experiences, I learned how to write clean and structured code, and manage projects using version control systems like Git. These projects have provided me with a solid foundation to continue growing in the field of front-end development, with a particular focus on creating effective and modern user experiences</p>
+      </section>
 
-            <img src="Chris.jpg" alt="Christian Luongo">
-        </section>
-    </main>
+      <section>
+        <h3>Services</h3>
+        <ol>
+          <li>1) Just website files</li>
+          <li>2) Website and complete hosting with basic security features</li>
+          <li>3) Complete website maintenece with best security features and SSL certificate</li>
+        </ol>
+        <h4>use the contact form to ask for the prices because they depend on the work</h4>
+      </section>
 
-    <script src='script.js'></script>
+      <section>
+        <h3>Conclusions</h3>
+        <p>Thank you for visiting my portfolio and taking the time to explore my work and passion for front-end development. I’m excited about the opportunity to collaborate with new clients and turn your ideas into outstanding digital experiences. If you’re looking for a dedicated, creative, and detail-oriented professional, I’m eager to bring my skills to your project. Feel free to reach out to discuss your next project—I’m confident that together, we can create something truly special!</p>
+      </section>
+  </div>
+  <script src="script.js" defer></script>
 </body>
 </html>
